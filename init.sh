@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-read -p "Is this \"Earth\" or \"Jupiter\"? or \"Mars\"? " COMPUTER_NAME
-case $COMPUTER_NAME in
-    Earth ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Earth...";;
-    Jupiter ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Jupiter...";;
-    Mars ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Mars...";;
-    * ) echo "Please answer with \"Jupiter\" or \"Mars\"."; exit 0;;
-esac
+# read -p "Is this \"Earth\" or \"Jupiter\"? or \"Mars\"? " COMPUTER_NAME
+# case $COMPUTER_NAME in
+#     Earth ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Earth...";;
+#     Jupiter ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Jupiter...";;
+#     Mars ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Mars...";;
+#     * ) echo "Please answer with \"Jupiter\" or \"Mars\"."; exit 0;;
+# esac
 
 gitfiles() {
 
@@ -32,9 +32,6 @@ hosts() {
         printf '\033[0;34m%s\033[0m\n' "Hosts already configured."
     else
         printf '\033[0;34m%s\033[0m\n' "Configuring Hosts..."
-        sudo bash -c "echo '# Homestead Sites' >> /etc/hosts"
-        sudo bash -c "echo 192.168.10.10    motivational.app >> /etc/hosts"
-        sudo bash -c "echo 192.168.10.10    newsoonersurvey.app >> /etc/hosts"
         sudo bash -c "echo '# Docker Machine Sites' >> /etc/hosts"
         sudo bash -c "echo 192.168.99.100   classnav.dev evaluate.dev iadvise.dev >> /etc/hosts"
     fi
@@ -76,13 +73,13 @@ sublimetext() {
 source ~/.dotfiles/homebrew.sh
 source ~/.dotfiles/ruby.sh
 source ~/.dotfiles/node.sh
-source ~/.dotfiles/ssh.sh
+# source ~/.dotfiles/ssh.sh
 
 gitfiles
 hosts
 ohmyzsh
 composer
-laravel
+# laravel
 sublimetext
 changeshell
 

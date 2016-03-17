@@ -3,8 +3,8 @@
 [hub]
         protocol = https
 [user]
-        name = Aaron Biggs
-        email = abiggs@ou.edu
+        name = Chris Hains
+        email = cshains@ou.edu
 [credential]
         helper = osxkeychain
 [alias]

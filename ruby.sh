@@ -6,7 +6,7 @@ then
   printf '\033[0;34m%s\033[0m\n' "rbenv is not install yet!"
   exit 0
 else
-    if grep -q "2.1.5" "/Users/abiggs/.rbenv/version";
+    if grep -q "2.1.5" "/Users/cshains/.rbenv/version";
     then
        printf '\033[0;34m%s\033[0m\n' "rbenv version already installed."
     else

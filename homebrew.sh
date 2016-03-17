@@ -44,7 +44,7 @@ brew install wget
 brew install node
 
 # Install Mackup
-brew install mackup
+# brew install mackup
 
 # Install Homebrew Cask for installing Mac apps.
 brew tap phinze/homebrew-cask
