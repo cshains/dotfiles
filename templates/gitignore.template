@@ -1,0 +1,11 @@
+.DS_Store
+.env
+.idea
+.svn
+*~
+*.rbc
+*.sublime-project
+*.sublime-workspace
+*.swp
+vendor/
+sftp-config.json
