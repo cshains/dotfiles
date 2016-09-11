@@ -33,7 +33,7 @@ hosts() {
     else
         printf '\033[0;34m%s\033[0m\n' "Configuring Hosts..."
         sudo bash -c "echo '# Docker Machine Sites' >> /etc/hosts"
-        sudo bash -c "echo 192.168.99.100   classnav.dev evaluate.dev iadvise.dev >> /etc/hosts"
+        sudo bash -c "echo 192.168.99.100   classnav.dev evaluate.dev iadvise.dev tps.dev>> /etc/hosts"
     fi
 }
 
